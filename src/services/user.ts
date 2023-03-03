@@ -21,5 +21,7 @@ export const deleteById = async (id: string): Promise<boolean> => {
 }
 
 export const getAll = async (): Promise<UserOutput[]> => {
-    return await prisma.user.findMany();
+    return await prisma.user.findMany( { orderBy: {
+        rank: 'asc'
+      }});
 }
