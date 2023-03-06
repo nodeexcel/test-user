@@ -4,7 +4,7 @@ import {CreateUserDto,UpdateUserDTO} from './controllers/user.dto'
 
 const userRouter = Router()
 
-userRouter.get(':/id', async (req: Request, res: Response) => {
+userRouter.get('/:id', async (req: Request, res: Response) => {
     const id = req.params.id
     const result = await userController.getById(id)
     return res.status(200).send(result)

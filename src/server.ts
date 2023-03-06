@@ -2,7 +2,7 @@ import express, { Application } from 'express'
 import routes from './routes'
 
 const app: Application = express()
-const port = 3000
+const port = 8000
 
 // Body parsing Middleware
 app.use(express.json());
