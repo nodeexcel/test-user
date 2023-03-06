@@ -1,5 +1,5 @@
 import * as service from '../services/user'
-import {CreateUserDto, UpdateUserDTO,} from './user.dto'
+import {CreateUserDto, UpdateUserDTO} from './user.dto'
 
 import { UserMapper } from './user.mapper'
 import { IUser } from './user.types'
